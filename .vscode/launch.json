@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run LedgerApp",
+      "request": "launch",
+      "mainClass": "LedgerApp",
+      "env": {
+        "DB_URL": "jdbc:mysql://localhost:3306/ledger_db?allowPublicKeyRetrieval=true&useSSL=false",
+        "DB_USER": "root",
+        "DB_PASS": "123456789"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# DOWNLOAD THIS INTO ANY COMPUTER AND ADD IT MYSQL WORKBENCH
+
+# 1.1 SET UP THE MYSQL WORKBENCH IN ANY COMPUTER OR WINDOWS LOPTOP
+# 1.2 ADD IT ON THE DESKTOP AND INSTALL IT AND DOWNLOAD THE OTHER FILE YOU WANT TO DOWNLOAD
+# 1.3 IMPORT THE SCHEMA.SQL FILE INTO THE WORKBENCH AND PROCEED INTO THE VSCODE
+# 1.4 CREATE A FOLDER NAME LIB AND INSTALL THE MYSQL CONNECTOR JAR AND THE DOWNLOADED CONNNECTOR PUT IT ON THE LIB FOLDER YOU CREATE
+
+
+# MAKE THE .VSCODE FOLDER AND ADD A LAUNCH.JSON FILE AND PUT THIS IN THE LAUNCH.JSON FILE
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run LedgerApp",
+      "request": "launch",
+      "mainClass": "LedgerApp",
+      "env": {
+        "DB_URL": "jdbc:mysql://localhost:3306/ledger_db?allowPublicKeyRetrieval=true&useSSL=false",
+        "DB_USER": "root",
+        "DB_PASS": "123456789"
+      }
+    }
+  ]
+}
